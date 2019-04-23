@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t ANYTAG -f Dockerfile.dev .
+    - docker build -t anytag -f Dockerfile.dev .
     
 script:
-    - docker run ANYTAG run npm test -- --coverage
+    - docker run anytag run npm test -- --coverage
